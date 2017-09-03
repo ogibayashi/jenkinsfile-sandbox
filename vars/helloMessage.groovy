@@ -1,0 +1,5 @@
+def helloMessage {
+  "Hello!"
+}
+
+
