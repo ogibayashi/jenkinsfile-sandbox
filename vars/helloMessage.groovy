@@ -1,16 +1,10 @@
 def person = [
-  [
-    'name': 'Alice',
-   'age': 10
-  ],
-  [
-    'name': 'Bob',
-   'age': 20
-  ]
+  'Alice': ['name': 'Alice', 'age': 10],
+              'Bob': ['name': 'Bob','age': 20 ]
 ]
 
 def call(String name='human') {
-  echo "Hello, ${person[name]}!"
+  echo "Hello, ${name}!, Your age is ${person[name][age]}"
 }
 
 
