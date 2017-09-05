@@ -1,5 +1,5 @@
 def helloMessage() {
-  "Hello!"
+  echo "Hello!"
 }
 
 
