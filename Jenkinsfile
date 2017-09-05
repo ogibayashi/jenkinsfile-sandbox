@@ -2,7 +2,7 @@
 pipeline {
   agent any
   stages {
-    stages('Example') {
+    stage('Example') {
       echo "${params.Greeting} world!"
       echo "Message: ${helloMessage}"
     }
