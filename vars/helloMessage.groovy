@@ -1,5 +1,5 @@
-def helloMessage() {
-  echo "Hello!"
+def call(String name='human') {
+  echo "Hello, ${name}!"
 }
 
 

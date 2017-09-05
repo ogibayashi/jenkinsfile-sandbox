@@ -5,7 +5,8 @@ pipeline {
     stage('Example') {
       steps {
         echo "Hello world!"
-        helloMessage
+        helloMessage()
+        helloMessage 'world'
       }
     }
   }
