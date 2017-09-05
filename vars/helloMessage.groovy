@@ -1,4 +1,4 @@
-def helloMessage {
+def helloMessage() {
   "Hello!"
 }
 
