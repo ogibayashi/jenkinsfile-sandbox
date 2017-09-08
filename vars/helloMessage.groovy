@@ -4,8 +4,7 @@ def person = [
 ]
 
 def call(String name='human') {
-  //  echo "Hello, ${name}!, Your age is ${person['Alice']['age']}"
+  echo "Hello, ${name}!, Your age is ${person['Alice']['age']}"
   echo "Hello, ${name}!"
 }
-
 
