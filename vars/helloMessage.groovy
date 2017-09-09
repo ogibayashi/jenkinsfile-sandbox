@@ -6,7 +6,7 @@ def getConfig(String name='Alice') {
 
 def call(String name='human') {
   def person = getConfig(name)
-  age = person["${name}"]['age']
+  age = person[name]['age']
   echo "Hello, ${name}!"
   echo "Hello, test ${person['Alice']['name']}!"
   echo "Hello, ${name}!, Your age is ${age}"
