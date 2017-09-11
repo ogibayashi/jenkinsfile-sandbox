@@ -9,6 +9,6 @@ def call(String name='human') {
   echo "${person.get(name)}"
   echo "Hello, ${name}!"
   echo "Hello, test ${person['Alice']['name']}!"
-  echo "Hello, ${name}!, Your age is ${perseon['age']}"
+  echo "Hello, ${name}!, Your age is ${person['age']}"
 }
 
