@@ -5,10 +5,15 @@
 // }
 
 def call(String name='human') {
-  def person = getConfig.config.get(name)
-  echo "${person.get(name)}"
-  echo "Hello, ${name}!"
-  echo "Hello, test ${person['Alice']['name']}!"
-  echo "Hello, ${name}!, Your age is ${person['age']}"
+  try {
+    def person = getConfig.config.get(name)
+    echo "${person.get(name)}"
+    echo "Hello, ${name}!"
+    echo "Hello, test ${person['Alice']['name']}!"
+    echo "Hello, ${name}!, Your age is ${person['age']}"
+  }
+  catch(e) {
+    echo "No such name ${name}"
+  }
 }
 
