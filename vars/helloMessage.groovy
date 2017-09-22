@@ -6,7 +6,8 @@
 
 def call(String name='human') {
   try {
-    def person = getConfig.get(name)
+    def config = getConfig.get()
+    def person = config.get(name)
     echo "${person.get(name)}"
     echo "Hello, ${name}!"
     echo "Hello, test ${person['Alice']['name']}!"
